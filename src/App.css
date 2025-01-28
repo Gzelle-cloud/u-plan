@@ -1,0 +1,209 @@
+body {
+  background: url(assets/back1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #234A5E;
+}
+
+.language-btn {
+  background-color: #234A5E;
+  color: #F3E6D6;
+  border: none;
+  padding: 5px;
+  font-family: "Montserrat", serif;
+  border-radius: 20%;
+}
+
+.icon {
+  border: none;
+  background: none;
+}
+
+.screenshot {
+  border: 1px solid  #8D5B51;
+}
+
+.box {
+  color: #234A5E;
+  display: flex;  
+  justify-content: center;
+  text-align: center;
+  padding: 0px 50px;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.today-block {
+  background-color: #F3E6D6;
+  padding: 20px;  
+  margin: 10px;
+  width: 30%;
+}
+
+.tasks-block {
+  background-color: #BAD0C6;
+  padding: 20px;  
+  margin: 10px;
+  flex: 1 1 0%;
+}
+
+.sticker {
+  background-color: #BAD0C6;
+  padding: 10px;
+  color: #234A5E;
+}
+
+.input-tasks-group {
+  display: flex;
+  margin-top: 10px;
+}
+
+.input {
+  margin-right: 10px;
+  flex: 2;
+  font-family: "Montserrat", serif;
+}
+
+.btn {  
+  width: 100%;
+  font-family: "Montserrat", serif;
+  font-weight: bold;
+}
+
+.btn-add-task {
+  padding: 10px;
+  background-color: #F3AA9A;
+  border: none;
+  color: #F3E6D6;
+  flex: 1;
+}
+
+.btn-delete-task {
+  padding: 10px;
+  background-color: #F3E6D6;
+  border: solid 2px #F3AA9A;
+  color: #F3AA9A;
+}
+
+li {
+  list-style: none;
+  color: #234A5E;
+  font-family: "Montserrat", serif;
+}
+
+.crossed {
+  text-decoration: line-through; 
+  color: #F3E6D6; 
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-size: 20Px;
+  font-family: "Montserrat", serif;
+}
+
+.link {  
+  text-decoration: none;
+  color: #234A5E;
+  padding: 10px;
+}
+
+.link:hover {
+  text-transform: uppercase;
+}
+
+.link-active {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.text {
+  color: #8D5B51;
+}
+
+p, h1, h2, h4, label, input, textarea {
+  font-family: "Montserrat", serif;
+}
+
+.note {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  width: 30%;  
+  box-shadow: 1px 3px 4px rgba(35, 74, 94, 0.5);
+}
+
+.selected {
+  background-color: #F3E6D6;
+}
+
+.default {
+  background-color: #BAD0C6;
+}
+
+.input-notes-group {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 10px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  color: #234A5E;
+}
+
+.note-input {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.btn-add-note {
+  background-color: #F3AA9A;
+  border: none;
+  color: #F3E6D6;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.btn-delete-note {
+  background: none;
+  border: none;
+  color: #F3AA9A;
+  font-weight: bold;
+  margin-left: auto;
+}
+
+.field {
+  color: #234A5E;
+}
+
+@media all and (max-width: 800px) {
+  .wrapper {
+    justify-content: center;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .today-block {
+    width: 100%;
+  } 
+
+  .input-notes-group { 
+    width: 80%;
+  }
+} 
