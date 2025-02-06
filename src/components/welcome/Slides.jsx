@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { data } from "./data"
+import { data } from "./data";
 
-import previos from "./assets/Previos.png"
-import next from "./assets/Next.png"
+import previos from "../../assets/Previos.png"
+import next from "../../assets/Next.png"
 
 function Slides() {
 

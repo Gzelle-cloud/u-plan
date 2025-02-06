@@ -22,6 +22,7 @@ function Navbar() {
         <Link to="/" className='link'>U-Plan</Link>
         <Link to="/tasks" className='link'>{t('tasks')}</Link>
         <Link to="/ideas" className='link'>{t('ideas')}</Link>
+        <Link to="/workshop" className='link'>{t('workshop')}</Link>
       </nav>
 
   )

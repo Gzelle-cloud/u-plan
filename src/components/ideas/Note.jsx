@@ -20,7 +20,7 @@ const Note = ({addNoteProp, selectedNoteProp, updateNoteProp}) => {
 
       <div className="input-group">
       {!selectedNoteProp ? (
-        <p>{t('Add idea and click on it to edit')}</p>
+        <p>{t('Add idea and click on pencil button to edit')}</p>
         ) : (
         <div className="input-notes-group">
           <label>{t('Title')}</label>
@@ -31,6 +31,17 @@ const Note = ({addNoteProp, selectedNoteProp, updateNoteProp}) => {
             value={selectedNoteProp.title}
             onChange={(e) => editNote("title", e.target.value)}
           />
+         
+          <label>Category</label>
+          <select 
+            className="note-input option"
+            value={selectedNoteProp.category || ""}
+            onChange={(e) => editNote("category", e.target.value)}>
+            <option className="option" value="">Select category ...</option>
+            <option className="option" value="personal">Personal</option>
+            <option className="option" value="professional">Professional</option>
+            <option className="option" value="creative">Creative</option>
+          </select>
           <label>{t('Description')}</label>
           <textarea
             type="text"
