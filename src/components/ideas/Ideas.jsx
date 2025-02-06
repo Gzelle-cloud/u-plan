@@ -2,8 +2,14 @@ import { useEffect, useState } from "react";
 import Note from "./Note";
 import NotesList from "./NotesList";
 import { v4 as uuid } from 'uuid';
+import AllCategories from "../filter/AllCategories";
+import { useSelector } from "react-redux";
+import { getSelectedCategory } from "../../redux/ideasSlice";
 
 function Ideas() {
+  const selectedCategory = useSelector(getSelectedCategory)
+
+
   const [myNotes, setMyNotes] = useState(localStorage.myNotes ? JSON.parse(localStorage.myNotes) : [])
   const [selectedNote, setSelectedNote] = useState(null)
 
@@ -13,8 +19,9 @@ function Ideas() {
 
   const addNote = () => {
     const newNote = {
-      title: " ",
+      title: "",
       id: uuid(),
+      category: "",
       description: ""
     }
     setMyNotes([newNote, ...myNotes])
@@ -37,20 +44,26 @@ function Ideas() {
     return myNotes.find( ({id}) => id === selectedNote )
   }
 
+  const filteredNotes = selectedCategory === "All" ? myNotes : myNotes.filter(item => item.category.toLowerCase() === selectedCategory.toLowerCase());
+
   return(
-    <div>
+    <div>          
       <Note addNoteProp = {addNote}
         selectedNoteProp = {getActiveNote()}
-        updateNoteProp = {updateNote}       
-        
+        updateNoteProp = {updateNote}         
       />
+      <div className="categoryButtons">
+        <AllCategories />
+      </div>      
+      
       <NotesList 
-        myNotesProp = {myNotes}
+        myNotesProp = {filteredNotes}
         addNoteProp = {addNote}
         deleteNoteProp = {deleteNote}
         selectedNoteProp = {selectedNote}
         setSelectedNoteProp = {setSelectedNote}
       />
+
     </div>
   )
 }

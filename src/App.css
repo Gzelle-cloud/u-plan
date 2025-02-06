@@ -85,6 +85,7 @@ body {
   border: none;
   color: #F3E6D6;
   flex: 1;
+  cursor: pointer;
 }
 
 .btn-delete-task {
@@ -92,6 +93,7 @@ body {
   background-color: #F3E6D6;
   border: solid 2px #F3AA9A;
   color: #F3AA9A;
+  cursor: pointer;
 }
 
 li {
@@ -132,7 +134,7 @@ nav {
   color: #8D5B51;
 }
 
-p, h1, h2, h4, label, input, textarea {
+p, h1, h2, h4, label, input, textarea, .option {
   font-family: "Montserrat", serif;
 }
 
@@ -186,10 +188,69 @@ p, h1, h2, h4, label, input, textarea {
   color: #F3AA9A;
   font-weight: bold;
   margin-left: auto;
+  cursor: pointer;
+}
+
+.editButtons {
+  display: flex;
+  flex-direction: column;
 }
 
 .field {
   color: #234A5E;
+}
+
+.tag {
+  background-color: #234A5E;
+  color: #F3E6D6;
+  border-radius: 8px;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-family: "Montserrat", serif;
+}
+
+.categoryButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.categoryButton {
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+  width: 7%;
+  text-align: center;
+  border: solid 2px #F3AA9A;
+  color: #234A5E;
+}
+
+.categoryButton:hover {
+  background-color: #F3E6D6;
+}
+
+.categoryButtonSelected {
+  background-color: #F3E6D6;
+}
+
+.noteButtons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.workshopButton {
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  border: solid 2px #F3AA9A;
+  color: #234A5E;
+  background: none;
+}
+
+.workshopButton:hover {
+  background-color: #F3E6D6;
 }
 
 @media all and (max-width: 800px) {
@@ -205,5 +266,9 @@ p, h1, h2, h4, label, input, textarea {
 
   .input-notes-group { 
     width: 80%;
+  }
+
+  .categoryButton {
+    width: auto;
   }
 } 

@@ -27,8 +27,10 @@ function Welcome() {
         <h4>{t('your life, your way')}</h4>
       </div>
       <div className="box appear">
-        <p>{t('Plan your day: manage today’s tasks and capture your ideas before they slip away—without distractions from an overfilled design')}</p>
+        <p>{t('Plan your day: manage today’s tasks and capture your ideas, and refine them in the workshop — without distractions from an overfilled design')}</p>
+        <p>{t()}</p>
       </div>  
+      
       <div className="container appear">
         <p>{t('Explore the mobile version')}</p>
       </div>

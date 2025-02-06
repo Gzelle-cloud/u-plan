@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
-import check from "./assets/check.png";
-import completed from "./assets/completed.png";
+import check from "../../assets/check.png";
+import completed from "../../assets/completed.png";
 import Swal from 'sweetalert2';
 
 import React, { useEffect, useState } from 'react';
