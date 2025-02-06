@@ -1,6 +1,6 @@
 # Welcome to U-Plan
 ### U-Plan is a personal planner app designed to help you focus on what matters.
-It allows you to organize daily tasks, capture ideas, and keep track of your progress with a distraction-free, simple interface.
+It allows you to organize daily tasks, capture and refine ideas, and keep track of your progress with a distraction-free, simple interface.
 
 ![image](https://github.com/user-attachments/assets/0de9b3b4-515a-441b-979d-43011bc7cfd2)
 
@@ -9,6 +9,8 @@ It allows you to organize daily tasks, capture ideas, and keep track of your pro
 Easily add, edit, and complete tasks to stay on top of your day.
 ### Ideas Capture: 
 Write down ideas and notes to revisit or develop later.
+### Workshop:
+Move ideas here when you're ready to develop and work on them further.
 ### Multi-language Support: 
 Switch between English and Russian with a single click.
 ### Minimalistic Design: 
@@ -23,6 +25,8 @@ A clean layout that keeps you focused on your priorities.
 For building the user interface.
 ### React Router: 
 For navigation between sections.
+### Redux Toolkit:  
+For state management, improving efficiency and maintainability.
 ### <img src="https://github.com/user-attachments/assets/7da676e0-c182-4a4b-ad25-ed83957ee387" alt="image" width="20" /> i18next: 
 For multi-language support.
 ### <img src="https://github.com/user-attachments/assets/03fda3e4-59fa-42d2-8d85-0921ef9dbf3a" alt="image" width="40" /> : 
@@ -51,7 +55,7 @@ npm start
 ![image](https://github.com/user-attachments/assets/492272f4-8d4c-456f-8915-15fc24fde38c)
 
 ## Usage
-#### Navigate between tabs to organize tasks or capture ideas.
+#### Navigate between tabs to organize tasks, quickly capture ideas, or move them to the workshop for further development.
 #### Add a new task or note by typing into the input fields and clicking the "Add" button.
 #### Mark tasks as completed by clicking on them.
 #### Use the language toggle button to switch between English and Russian.
