@@ -2,6 +2,7 @@ body {
   background: url(assets/back1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .container {
@@ -40,6 +41,7 @@ body {
 .wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .today-block {
@@ -219,7 +221,7 @@ p, h1, h2, h4, label, input, textarea, .option {
   cursor: pointer;
   margin: 5px;
   padding: 5px;
-  width: 7%;
+  width: auto;
   text-align: center;
   border: solid 2px #F3AA9A;
   color: #234A5E;
@@ -253,12 +255,6 @@ p, h1, h2, h4, label, input, textarea, .option {
   background-color: #F3E6D6;
 }
 
-@media all and (max-width: 800px) {
-  .wrapper {
-    justify-content: center;
-  }
-}
-
 @media all and (max-width: 500px) {
   .today-block {
     width: 100%;
@@ -268,7 +264,4 @@ p, h1, h2, h4, label, input, textarea, .option {
     width: 80%;
   }
 
-  .categoryButton {
-    width: auto;
-  }
 } 
