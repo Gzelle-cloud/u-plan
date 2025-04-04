@@ -27,6 +27,8 @@ For building the user interface.
 For navigation between sections.
 ### Redux Toolkit:  
 For state management, improving efficiency and maintainability.
+### REST API:
+For fetching a random daily quote from [ZenQuotes API](https://zenquotes.io/)  API to inspire users.
 ### <img src="https://github.com/user-attachments/assets/7da676e0-c182-4a4b-ad25-ed83957ee387" alt="image" width="20" /> i18next: 
 For multi-language support.
 ### <img src="https://github.com/user-attachments/assets/03fda3e4-59fa-42d2-8d85-0921ef9dbf3a" alt="image" width="40" /> : 
