@@ -38,6 +38,11 @@ For styled alerts and notifications.
 ### <img src="https://github.com/user-attachments/assets/fea0b273-fcce-4be0-98c5-3b0976837ea1" alt="image" /> : 
 For styling the app.
 
+![image](https://github.com/user-attachments/assets/8dccf490-eaf6-41f3-b0ef-e3590cacd625)
+
+## Data Storage
+U-Plan uses Local Storage for saving tasks and ideas on the user's device, ensuring that your data stays private and isn't stored on any server.
+
 ![image](https://github.com/user-attachments/assets/2bf7e67b-880c-4deb-a948-95dbb49311d9)
 
 ## Installation
