@@ -1,3 +1,4 @@
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Read+before+start)](https://git.io/typing-svg)
 # Welcome to U-Plan
 ### U-Plan is a personal planner app designed to help you focus on what matters.
 It allows you to organize daily tasks, capture and refine ideas, and keep track of your progress with a distraction-free, simple interface.
