@@ -69,6 +69,9 @@ npm start
 #### Use the language toggle button to switch between English and Russian.
 #### Delete all tasks or notes with the delete button if needed.
 
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
 
 
 
